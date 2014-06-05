@@ -1,0 +1,26 @@
+{
+  "name": "strong-log-transformer",
+  "version": "0.0.0",
+  "description": "A transform stream for performing common log stream transformations like timestamping and joining multi-line messages.",
+  "author": "Ryan Graham <ryan@strongloop.com>",
+  "license": {
+    "name": "Dual MIT/StrongLoop",
+    "url": "https://github.com/strongloop/strong-log-transformer/blob/master/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strongloop/strong-log-transformer"
+  },
+  "keywords": [
+    "logging",
+    "streams"
+  ],
+  "bugs": {
+    "url": "https://github.com/strongloop/strong-log-transformer/issues"
+  },
+  "homepage": "https://github.com/strongloop/strong-log-transformer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
