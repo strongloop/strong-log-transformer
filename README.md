@@ -41,9 +41,11 @@ if (cluster.isMaster) {
 
   // stdout is plain line-oriented logs, but we want to add timestamps
   var info = transformer({ timeStamp: true,
+                           tag: 'INFO',
                            destination: process.stdout });
   // stderr will only be used for strack traces on crash, which are multi-line
   var error = transformer({ timeStamp: true,
+                            tag: 'ERROR',
                             destination: process.stdout,
                             mergeMultiline: true });
 
@@ -70,7 +72,7 @@ When we run the example code as `example.js` we get:
 ```sh
 $ node example.js
 connecting worker
-2014-06-08T18:54:00.920Z new worker, this line will be timestamped!
-2014-06-08T18:54:00.926Z /Users/ryan/work/strong-log-transformer/e.js:33\n    throw new Error('This will generate a multi-line message!');\n          ^
-2014-06-08T18:54:00.926Z Error: This will generate a multi-line message!\n    at null._onTimeout (/Users/ryan/work/strong-log-transformer/e.js:33:11)\n    at Timer.listOnTimeout [as ontimeout] (timers.js:110:15)
+2014-06-08T18:54:00.920Z INFO new worker, this line will be timestamped!
+2014-06-08T18:54:00.926Z ERROR /Users/ryan/work/strong-log-transformer/e.js:33\n    throw new Error('This will generate a multi-line message!');\n          ^
+2014-06-08T18:54:00.926Z ERROR Error: This will generate a multi-line message!\n    at null._onTimeout (/Users/ryan/work/strong-log-transformer/e.js:33:11)\n    at Timer.listOnTimeout [as ontimeout] (timers.js:110:15)
 ```
