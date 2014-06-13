@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "byline": "^4.1.1",
+    "duplexer": "^0.1.1",
     "minimist": "^0.1.0",
     "moment": "^2.6.0",
     "through": "^2.3.4"

@@ -41,19 +41,17 @@ if (cluster.isMaster) {
 
   // stdout is plain line-oriented logs, but we want to add timestamps
   var info = transformer({ timeStamp: true,
-                           tag: 'INFO',
-                           destination: process.stdout });
+                           tag: 'INFO' });
   // stderr will only be used for strack traces on crash, which are multi-line
   var error = transformer({ timeStamp: true,
                             tag: 'ERROR',
-                            destination: process.stdout,
                             mergeMultiline: true });
 
   // Each worker's stdout/stderr gets piped into our info and erro transformers
   cluster.on('fork', function(worker) {
     console.error('connecting worker');
-    worker.process.stdout.pipe(info);
-    worker.process.stderr.pipe(error);
+    worker.process.stdout.pipe(info).pipe(process.stdout);
+    worker.process.stderr.pipe(error).pipe(process.stdout);
   });
 
   //... cluster fork logic goes here ...
