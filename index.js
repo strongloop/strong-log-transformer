@@ -1,1 +1,2 @@
-module.exports = require('./lib/logger.js');
+module.exports = require('./lib/logger');
+module.exports.cli = require('./lib/cli');
