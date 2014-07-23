@@ -23,7 +23,7 @@
     "test": "test"
   },
   "bin": {
-    "strong-log-transformer": "bin/t.js"
+    "sl-log-transformer": "bin/sl-log-transformer.js"
   },
   "main": "index.js",
   "scripts": {
