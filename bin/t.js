@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var opts = require('minimist')(process.argv.slice(2));
 var logger = require('..')(opts);
 
