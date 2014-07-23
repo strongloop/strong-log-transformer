@@ -1,7 +1,7 @@
 {
   "name": "strong-log-transformer",
   "version": "0.1.0",
-  "description": "A transform stream for performing common log stream transformations like timestamping and joining multi-line messages.",
+  "description": "Stream transformer that prefixes lines with timestamps and other things.",
   "author": "Ryan Graham <ryan@strongloop.com>",
   "license": {
     "name": "Dual MIT/StrongLoop",
