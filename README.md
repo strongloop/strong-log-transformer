@@ -13,6 +13,27 @@ Install strong-log-transformer and add it to your dependencies list.
 npm install --save strong-log-transformer
 ```
 
+### CLI
+
+When installed globally the `sl-log-transformer` CLI utility is exposed. It is
+primarily used for testing, but it can also be used as an alternative to
+awk or sed for jobs such as timestamping every line of another process's
+output. This can be useful for cron jobs, for example.
+
+```sh
+$ npm install -g strong-log-transformer
+$ sl-log-tranformer --help
+Usage: sl-log-transformer [options]
+
+Stream transformer that prefixes lines with timestamps and other things.
+
+OPTIONS:
+   --format FORMAT        default: "text"
+   --tag TAG              default: ""
+   --mergeMultiline       default: off
+   --timeStamp            default: off
+```
+
 ### Line Merging
 
 In order to keep things flowing when line merging is enabled (disabled by
