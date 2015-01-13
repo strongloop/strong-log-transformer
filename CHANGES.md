@@ -1,3 +1,9 @@
+2015-01-13, Version 1.0.1
+=========================
+
+ * Fix bad CLA URL in CONTRIBUTING.md (Ryan Graham)
+
+
 2014-10-24, Version 1.0.0
 =========================
 
@@ -7,3 +13,40 @@
 
  * Don't let CI break tests if it modifies version (Ryan Graham)
 
+
+2014-07-28, Version 0.2.1
+=========================
+
+ * Change to dual-license as Artistic/StrongLoop (Ryan Graham)
+
+
+2014-07-23, Version 0.2.0
+=========================
+
+ * Hide tgzs so npm pack doesn't pack itself (Ryan Graham)
+
+ * package: make description more concise (Ryan Graham)
+
+ * doc: initial CLI description (Ryan Graham)
+
+ * test: cli --help/--version (Ryan Graham)
+
+ * Add CLI (Ryan Graham)
+
+ * expose option defaults as Logger.DEFAULTS (Ryan Graham)
+
+ * bin: strong-log-transformer to sl-log-transformer (Ryan Graham)
+
+ * fix: make bin/t.js runnable (Ryan Graham)
+
+
+2014-06-12, Version 0.1.0
+=========================
+
+ * Make transformer a duplex stream (Ryan Graham)
+
+
+2014-06-11, Version 0.0.1
+=========================
+
+ * First release!
