@@ -37,6 +37,6 @@
     "through": "^2.3.4"
   },
   "devDependencies": {
-    "tap": "git://github.com/strongloop/node-tap#production"
+    "tap": "^0.6.0"
   }
 }
