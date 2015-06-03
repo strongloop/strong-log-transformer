@@ -1,4 +1,10 @@
-2015-01-13, Version 1.0.1
+2015-06-03, Version 1.0.2
+=========================
+
+ * test: use official tap (Ryan Graham)
+
+
+2015-01-12, Version 1.0.1
 =========================
 
  * Fix bad CLA URL in CONTRIBUTING.md (Ryan Graham)
