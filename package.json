@@ -27,7 +27,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "tap test/test-*"
+    "test": "tap --coverage --coverage-report=cobertura test/test-*"
   },
   "dependencies": {
     "byline": "^4.1.1",

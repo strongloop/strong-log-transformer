@@ -27,3 +27,4 @@ node_modules
 # test sandbox
 test/sandbox
 *.tgz
+.nyc_output
