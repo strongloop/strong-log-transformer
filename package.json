@@ -3,10 +3,7 @@
   "version": "1.0.2",
   "description": "Stream transformer that prefixes lines with timestamps and other things.",
   "author": "Ryan Graham <ryan@strongloop.com>",
-  "license": {
-    "name": "Dual Artistic/StrongLoop",
-    "url": "https://github.com/strongloop/strong-log-transformer/blob/master/LICENSE.md"
-  },
+  "license": "Artistic-2.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/strongloop/strong-log-transformer"
