@@ -1,4 +1,12 @@
-2016-05-06, Version 1.0.5
+2016-09-01, Version 1.0.6
+=========================
+
+ * package: update to byline 5.x (Sam Roberts)
+
+ * Update URLs in CONTRIBUTING.md (#3) (Ryan Graham)
+
+
+2016-05-05, Version 1.0.5
 =========================
 
  * update copyright notices and license (Ryan Graham)
