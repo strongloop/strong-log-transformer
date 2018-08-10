@@ -1,3 +1,4 @@
+  this line is just indented and not a continuation
 This is a line that is so long that
   it continues onto the next line!
 Imagine, if you will, a stacktr..SyntaxError: Unexpected identifier
