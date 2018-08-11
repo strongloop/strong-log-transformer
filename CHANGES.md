@@ -1,3 +1,29 @@
+2018-08-11, Version 2.0.0
+=========================
+
+ * deps: remove dependency on moment (Ryan Graham)
+
+ * deps: update minimist (Ryan Graham)
+
+ * test: 100% test coverage :tada: (Ryan Graham)
+
+ * test: cover all features (Ryan Graham)
+
+ * test: add minimal json formatter test (Ryan Graham)
+
+ * test: expand line-merge test coverage (Ryan Graham)
+
+ * ci: add minimal Travis config (Ryan Graham)
+
+ * deps: upgrade to tap@12 (Ryan Graham)
+
+ * MAJOR: replace CLA with DCO (Ryan Graham)
+
+ * MAJOR: relicense under Apache 2.0 license (Ryan Graham)
+
+ * MAJOR: drop support for node < 4 (Ryan Graham)
+
+
 2016-09-01, Version 1.0.6
 =========================
 
