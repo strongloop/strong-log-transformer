@@ -30,7 +30,6 @@
     "byline": "^5.0.0",
     "duplexer": "^0.1.1",
     "minimist": "^1.2.0",
-    "moment": "^2.6.0",
     "through": "^2.3.4"
   },
   "devDependencies": {
