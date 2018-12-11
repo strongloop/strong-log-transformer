@@ -27,8 +27,7 @@
     "test": "tap --100 test/test-*"
   },
   "dependencies": {
-    "minimist": "^1.2.0",
-    "through": "^2.3.4"
+    "minimist": "^1.2.0"
   },
   "devDependencies": {
     "tap": "^12.0.1"
