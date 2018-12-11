@@ -27,7 +27,6 @@
     "test": "tap --100 test/test-*"
   },
   "dependencies": {
-    "byline": "^5.0.0",
     "duplexer": "^0.1.1",
     "minimist": "^1.2.0",
     "through": "^2.3.4"
