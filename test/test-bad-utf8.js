@@ -22,13 +22,29 @@ tap.test('truncated utf8', function(t) {
     Buffer.from('good line\n'),
     Buffer.from('good line\n'),
     Buffer.from([
-      0xef, 0xbf, 0xbd, // replacement character
-      0xef, 0xbf, 0xbd, // replacement character
-      0xef, 0xbf, 0xbd, // replacement character
+      0xef, 0xbf, 0xbd, // single replacement character
       0x0a,             // trailing newline adde by strong-log-transformer
     ]),
   ]);
   var received = [];
+
+  if (/^v(4|6)\./.test(process.version)) {
+    expected = Buffer.concat([
+      Buffer.from("good line\n"),
+      Buffer.from("good line\n"),
+      Buffer.from('good line\n'),
+      Buffer.from('good line\n'),
+      Buffer.from([
+        // prior to node 8 each byte of an invalid utf8 sequence would be
+        // replaced by a UTF replacement character. For more details, see
+        // https://github.com/nodejs/node/commit/24ef1e6775
+        0xef, 0xbf, 0xbd, // replacement character
+        0xef, 0xbf, 0xbd, // replacement character
+        0xef, 0xbf, 0xbd, // replacement character
+        0x0a,             // trailing newline adde by strong-log-transformer
+      ]),
+    ]);
+  }
 
   slt.on('readable', function() {
     var buf = slt.read();
