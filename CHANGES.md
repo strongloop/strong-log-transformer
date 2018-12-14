@@ -1,3 +1,17 @@
+2018-12-14, Version 2.1.0
+=========================
+
+ * src: replace byline with custom splitter (Ryan Graham)
+
+ * test: add color tag tests (Ryan Graham)
+
+ * test: ensure test fixtures use consistent newlines (Ryan Graham)
+
+ * test: replicate shell tests in JS (Ryan Graham)
+
+ * test: add tests for truncated utf8 sequences (Ryan Graham)
+
+
 2018-08-11, Version 2.0.0
 =========================
 

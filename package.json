@@ -1,6 +1,6 @@
 {
   "name": "strong-log-transformer",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Stream transformer that prefixes lines with timestamps and other things.",
   "author": "Ryan Graham <ryan@strongloop.com>",
   "license": "Apache-2.0",
